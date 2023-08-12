@@ -5,6 +5,7 @@
 // 2 -> "-2, -1, 0, 1, 2"
 
 Console.WriteLine("Введите целое число");
+
 int number = Convert.ToInt32(Console.ReadLine());
 int count = -number;
 
