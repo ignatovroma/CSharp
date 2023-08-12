@@ -6,7 +6,7 @@
 
 
 Console.WriteLine("Введите номер от 01 до 07 номер недели");
-string num = Console.ReadLine();
+string? num = Console.ReadLine();
 
     if (num == "1")
     {
