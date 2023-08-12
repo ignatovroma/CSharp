@@ -38,5 +38,5 @@ string num = Console.ReadLine();
     }
     else
     {
-        Console.WriteLine("Некорректное число");
+        Console.WriteLine("Некорректное ввод");
     }
