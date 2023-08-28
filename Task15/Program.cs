@@ -45,7 +45,7 @@ int Promt(string message)
 
 bool IsWeekend(int weekDay)
 {
-    if (weekDay>5)
+    if (weekDay > 5)
     {
         return true;
     }
@@ -54,7 +54,7 @@ bool IsWeekend(int weekDay)
 
 bool ValidateWeekday(int number)
 {
-    if (number>0&&number<=7)
+    if (number > 0 && number <= 7)
     {
         return true;
     }
@@ -62,7 +62,7 @@ bool ValidateWeekday(int number)
     return false;
 }
 
-int weekDay=Promt("Введите день недели: ");
+int weekDay = Promt("Введите день недели: ");
 if (ValidateWeekday(weekDay))
 {
     if (IsWeekend(weekDay))

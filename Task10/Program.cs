@@ -13,14 +13,14 @@ int Promt(string message)
     return result;
 }
 
-int number=Promt("Введите трёхзначное число: ");
-if (number<100||number>1000)
+int number = Promt("Введите трёхзначное число: ");
+if (number < 100 || number > 1000)
 {
     Console.WriteLine("Вы ввели не трёхзначное число, повоторите ввод");
     return;
 }
 Console.WriteLine($"Введенное число `{number}`");
-int secondRank = number /10%10;
+int secondRank = number / 10 % 10;
 Console.WriteLine($"Вторая цифра `{secondRank}`");
 
 /*int number = ReadInt("Введите трехзначное число: ");
