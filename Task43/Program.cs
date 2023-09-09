@@ -7,8 +7,6 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 
-using System.Runtime.Intrinsics.X86;
-
 int Promt(string message)
 {
     Console.Write(message); //вывести сообщение
@@ -24,17 +22,17 @@ double k2Var = Promt("Введите k2 -> ");
 
 double CoordY1(double b1Coord, double k1Coord, double b2Coord, double k2Coord)
 {
-        double xCoord = (b2Coord - b1Coord) / (k1Coord - k2Coord);
-        double point1 = k1Coord * xCoord + b1Coord; 
-                
-        return point1;
+    double xCoord = (b2Coord - b1Coord) / (k1Coord - k2Coord);
+    double point1 = k1Coord * xCoord + b1Coord;
+
+    return point1;
 }
 double CoordY2(double b1Coord, double k1Coord, double b2Coord, double k2Coord)
 {
-        double xCoord = (b2Coord - b1Coord) / (k1Coord - k2Coord);
-        double point2 = k2Coord * xCoord + b2Coord; 
-         
-        return point2;
+    double xCoord = (b2Coord - b1Coord) / (k1Coord - k2Coord);
+    double point2 = k2Coord * xCoord + b2Coord;
+
+    return point2;
 }
 double point1 = CoordY1(b1Var, k1Var, b2Var, k2Var);
 double point2 = CoordY2(b1Var, k1Var, b2Var, k2Var);
